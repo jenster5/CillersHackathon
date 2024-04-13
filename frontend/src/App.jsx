@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SignInCallbackPage from "./pages/SignInCallbackPage";
 import PrivateRoute from "./pages/PrivateRoute";
 import { loadErrorMessages, loadDevMessages } from "@apollo/client/dev";
-//import GameHomePage from "./pages/GameHomePage";
 import GameComponent from "./kaboom/gameComponent";
 
 const isDev = process.env.NODE_ENV === "development";
