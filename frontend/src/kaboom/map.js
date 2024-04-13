@@ -286,7 +286,7 @@ export const mapData = {
         {
           height: 14.117527173913,
           id: 30,
-          name: "cs-degree",
+          name: "phd-degree",
           rotation: 0,
           type: "",
           visible: true,

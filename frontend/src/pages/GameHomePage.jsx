@@ -1,4 +1,3 @@
-import React from "react";
 import GameComponent from "../kaboom/gameComponent";
 
 const GameHomePage = () => {
