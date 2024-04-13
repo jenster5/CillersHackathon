@@ -1,12 +1,14 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { signInCallback } from '../services/authService';
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+import { signInCallback } from "../services/authService";
 
-const SignInCallbackPage: React.FC = () => {
+const SignInCallbackPage = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    signInCallback().then(() => navigate('/')).catch(console.error);
+    signInCallback()
+      .then(() => navigate("/"))
+      .catch(console.error);
   }, [navigate]);
 
   return (

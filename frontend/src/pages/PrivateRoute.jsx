@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { Outlet } from 'react-router-dom';
-import { getUser, signIn } from '../services/authService';
+import React, { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
+import { getUser, signIn } from "../services/authService";
 
-const PrivateRoute: React.FC = () => {
+const PrivateRoute = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
-    getUser().then(user => {
+    getUser().then((user) => {
       if (user && !user.expired) {
         setIsAuthenticated(true);
       } else {
